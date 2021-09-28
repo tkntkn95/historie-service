@@ -22,6 +22,7 @@ import static org.apache.kafka.clients.producer.ProducerConfig.BOOTSTRAP_SERVERS
  * Über Spring-Kafka kann Stand 1.2 kein RebalanceListener eingeklinkt werden!
  * Daher ist diese Handarbeit noch notwendig! Kann sicher ändern!
  **/
+/*
 @Component
 public class KafkaListenerRunner implements Runnable {
 
@@ -110,4 +111,4 @@ public class KafkaListenerRunner implements Runnable {
 }
 
 
-
+*/
