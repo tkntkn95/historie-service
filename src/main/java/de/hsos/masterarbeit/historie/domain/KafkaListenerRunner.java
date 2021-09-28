@@ -22,7 +22,6 @@ import static org.apache.kafka.clients.producer.ProducerConfig.BOOTSTRAP_SERVERS
  * Über Spring-Kafka kann Stand 1.2 kein RebalanceListener eingeklinkt werden!
  * Daher ist diese Handarbeit noch notwendig! Kann sicher ändern!
  **/
-/*
 @Component
 public class KafkaListenerRunner implements Runnable {
 
@@ -36,7 +35,7 @@ public class KafkaListenerRunner implements Runnable {
     public Map<String, Object> config() {
 
         Map<String, Object> props = new HashMap<>();
-        props.put(BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+        props.put(BOOTSTRAP_SERVERS_CONFIG, "articleservice.servicebus.windows.net:9093");
         props.put(GROUP_ID_CONFIG, "historie-4");
         props.put(ENABLE_AUTO_COMMIT_CONFIG, "true");
         props.put(AUTO_COMMIT_INTERVAL_MS_CONFIG, "1000");
@@ -111,4 +110,4 @@ public class KafkaListenerRunner implements Runnable {
 }
 
 
-*/
+
