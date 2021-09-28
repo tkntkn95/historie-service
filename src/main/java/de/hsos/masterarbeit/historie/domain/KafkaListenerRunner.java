@@ -38,7 +38,7 @@ public class KafkaListenerRunner implements Runnable {
     public Map<String, Object> config() {
 
         Map<String, Object> props = new HashMap<>();
-        props.put(BOOTSTRAP_SERVERS_CONFIG, "articleservice.servicebus.windows.net:9093");
+        props.put(BOOTSTRAP_SERVERS_CONFIG, "articleservice.servicebus.windows.net:9092");
         props.put(GROUP_ID_CONFIG, "historie-4");
         props.put(ENABLE_AUTO_COMMIT_CONFIG, "true");
         props.put(AUTO_COMMIT_INTERVAL_MS_CONFIG, "1000");

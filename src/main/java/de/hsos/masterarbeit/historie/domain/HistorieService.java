@@ -44,7 +44,7 @@ public class HistorieService {
 	@Bean
 	public Producer<String,String> producer() {
 		Properties props = new Properties();
-		props.put(BOOTSTRAP_SERVERS_CONFIG, "articleservice.servicebus.windows.net:9093");
+		props.put(BOOTSTRAP_SERVERS_CONFIG, "articleservice.servicebus.windows.net:9092");
 		props.put(ACKS_CONFIG, "all");
 		props.put(RETRIES_CONFIG, 0);
 		props.put(BATCH_SIZE_CONFIG, 32000);
