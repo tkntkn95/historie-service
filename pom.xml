@@ -64,13 +64,6 @@
 			<artifactId>spring-cloud-starter-azure-eventhubs-kafka</artifactId>
 			<version>1.2.8</version>
 		</dependency>
-
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-webmvc</artifactId>
-			<version>5.3.10</version>
-		</dependency>
-
 	</dependencies>
 
 	<build>
