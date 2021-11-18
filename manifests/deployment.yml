@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: "masterarbeitcluster-a0b1"
+  name: "historie-service"
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: "masterarbeitcluster-a0b1"
+      app: "historie-service"
   template:
     metadata:
       labels:
-        app: "masterarbeitcluster-a0b1"
+        app: "historie-service"
     spec:
       containers:
-        - name: "masterarbeitcluster-a0b1"
-          image: "masterimages.azurecr.io/masterarbeitcluster"
+        - name: "historie-service"
+          image: "masterimages.azurecr.io/historie-service.jar:latest"
           ports:
           - containerPort: 8080
