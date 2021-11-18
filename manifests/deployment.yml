@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "historie-service"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "historie-service"
+  template:
+    metadata:
+      labels:
+        app: "historie-service"
+    spec:
+      containers:
+        - name: "historie-service"
+          image: "masterimages.azurecr.io/historie-service.jar:latest"
+          ports:
+          - containerPort: 8080
