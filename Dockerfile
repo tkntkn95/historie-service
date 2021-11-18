@@ -1,4 +1,4 @@
 FROM openjdk:11
-EXPOSE 8081
-ADD target/kasse-service.jar kasse-service.jar
-ENTRYPOINT ["java","-jar","kasse-service.jar"]
+EXPOSE 8080
+ADD target/historie-service.jar historie-service.jar
+ENTRYPOINT ["java","-jar","historie-service.jar"]
